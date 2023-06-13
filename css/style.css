@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #143f60;
+  color: #f1dfe1;
+}
+
+/* Hero Page */
+.section-hero {
+  width: 100%;
+}
+
+.hero {
+  min-height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+}
+
+.hero-text-role {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-intro-text {
+  margin-bottom: 2.5rem;
+  font-size: 7rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-text-name {
+  color: #ef3e36;
+}
+
+.hero-main-msg {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 6rem;
+}
+
+.hero-btn {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1.1rem;
+}
+
+.hero-btn:visited,
+.hero-btn:link {
+  color: #ef3e36;
+  border: 1px solid #ef3e36;
+  border-radius: 6px;
+
+  transition: all 0.3s;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  color: #f1dfe1;
+  border: 1px solid #ef3e36;
+  background-color: #ef3e36;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.hero-text-logo {
+  font-size: 15rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.hero-text-logo span {
+  position: absolute;
+}
+
+.hero-text-logo span:nth-child(1) {
+  color: #ef3e36;
+  bottom: 10rem;
+}
+
+.hero-text-logo span:nth-child(2) {
+  bottom: 1rem;
+  left: 6rem;
+}
+
+.hero-text-logo span:nth-child(3) {
+  bottom: -6.7rem;
+  left: 15.2rem;
+}
+
+.hero-text-logo span:nth-child(4) {
+  color: #ef3e36;
+  bottom: -13rem;
+  left: 25rem;
+}
