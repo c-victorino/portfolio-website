@@ -17,6 +17,56 @@ body {
   color: #f1dfe1;
 }
 
+/* Header */
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 4rem 0 4rem;
+}
+
+.logo {
+  color: #ef3e36;
+  font-size: 2.4rem;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.resume {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #a6ebc9;
+  font-weight: 600;
+}
+
+.resume:visited,
+.resume:link {
+}
+
+.resume:hover,
+.resume:active {
+}
+
+.nav-lists {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-list:visited,
+.nav-list:link {
+  text-decoration: none;
+  color: #f1dfe1;
+  font-size: 1.8rem;
+}
+
+.nav-list:hover,
+.nav-list:active {
+}
+
 /* Hero Page */
 .section-hero {
   width: 100%;
