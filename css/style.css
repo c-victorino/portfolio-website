@@ -19,9 +19,12 @@ body {
 
 /* Header */
 .hero-header {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 4rem 4rem 0 4rem;
+  align-items: center;
+  padding: 4rem;
 }
 
 .logo {
@@ -32,7 +35,7 @@ body {
 /* Navigation */
 .navigation {
   display: flex;
-  gap: 3.2rem;
+  gap: 2.2rem;
 }
 
 .resume {
@@ -44,6 +47,9 @@ body {
 
 .resume:visited,
 .resume:link {
+  font-size: 1.8rem;
+  padding: 1rem;
+  transition: all 0.3s;
 }
 
 .resume:hover,
@@ -53,30 +59,35 @@ body {
 .nav-lists {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 2rem;
+  font-weight: 500;
 }
 
 .nav-list:visited,
 .nav-list:link {
+  display: inline-block;
   text-decoration: none;
   color: #f1dfe1;
   font-size: 1.8rem;
+  padding: 1rem;
+  transition: all 0.3s;
 }
 
 .nav-list:hover,
 .nav-list:active {
+  color: #ef3e36;
 }
 
 /* Hero Page */
 .section-hero {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .hero {
   min-height: 100vh;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 3.5rem;
+  padding: 0 4.5rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -136,30 +147,61 @@ body {
 .hero-text-logo {
   font-size: 15rem;
   font-weight: 600;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-text-logo span {
-  position: absolute;
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero-text-logo span:nth-child(1) {
   color: #ef3e36;
-  bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
 .hero-text-logo span:nth-child(2) {
-  bottom: 1rem;
-  left: 6rem;
+  margin-bottom: 6rem;
 }
 
 .hero-text-logo span:nth-child(3) {
-  bottom: -6.7rem;
-  left: 15.2rem;
+  margin-bottom: 3rem;
 }
 
 .hero-text-logo span:nth-child(4) {
   color: #ef3e36;
-  bottom: -13rem;
-  left: 25rem;
+}
+
+/* About */
+
+.section-about {
+  /* padding: 9.6rem 0; */
+}
+
+.secondary-heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.about {
+  margin: 0 auto;
+  padding: 0 4.5rem;
+  max-width: 120rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-text-box {
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
 }
