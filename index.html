@@ -14,28 +14,27 @@
     <title>Carlo Victorino</title>
   </head>
   <body>
-    <header class="hero-header">
-      <h2 class="logo">C-Victorino</h2>
+    <!-- <header class="hero-header">
+      <a href="#landing"><h2 class="logo">C-Victorino</h2></a>
       <nav class="navigation">
         <a class="resume" href="#">Resume</a>
         <ul class="nav-lists">
-          <li><a class="nav-list" href="">Home</a></li>
-          <li><a class="nav-list" href="">About</a></li>
-          <li><a class="nav-list" href="">Projects</a></li>
-          <li><a class="nav-list" href="">Contact</a></li>
+          <li><a class="nav-list" href="#about">About</a></li>
+          <li><a class="nav-list" href="#project">Projects</a></li>
+          <li><a class="nav-list" href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero" id="landing">
         <div class="hero grid-col-2">
           <div class="hero-text">
             <h1 class="hero-text-role">SOFT-WARE DEVELOPER</h1>
-            <h2 class="hero-text-intro">
+            <p class="hero-text-intro">
               Hi, I’m <br />
               <span class="hero-text-name">Carlo Victorino</span>
-            </h2>
+            </p>
 
             <p class="hero-main-msg">
               I'm an aspiring developer, driven by curiosity and a thirst for
@@ -43,7 +42,7 @@
               learning becoming a skilled developer.
             </p>
 
-            <a class="hero-btn" href="#">Connect with Me &rarr;</a>
+            <a class="hero-btn" href="#contact">Connect with Me &rarr;</a>
           </div>
           <div class="hero-text-logo">
             <span>{</span>
@@ -59,9 +58,8 @@
         <div class="about container grid-col-2">
           <div class="about-img-box">
             <img
-              class="about-img"
-              src="./danial-igdery-FCHlYvR5gJI-unsplash.jpg"
-              alt=""
+              src="./img/20230602_164259-removebg.png"
+              alt="Carlo Victorino in front of a computer programming a website"
             />
           </div>
 
@@ -94,7 +92,7 @@
       </section>
 
       <section class="section-skills-education">
-        <h3 class="container">Skills</h3>
+        <h3 class="container tertiary-heading">Skills</h3>
         <div class="skills container">
           <div class="skill">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -161,7 +159,7 @@
           </div>
         </div>
 
-        <h3 class="container">Education</h3>
+        <h3 class="container tertiary-heading">Education</h3>
         <div class="education container">
           <div class="education-frame">
             <div class="education-name">
@@ -251,18 +249,23 @@
         </div>
       </section>
 
-      <section class="section-project">
+      <section class="section-project" id="project">
         <h2 class="container secondary-heading">Things I've Built</h2>
-        <div class="container project">
+        <div class="container project grid-col-2">
           <div class="project-img-container">
             <img
               src="./img/assemlby-line.PNG"
-              alt="code in view of the Assembly Line project with Visula Studio as the IDE"
+              alt="C++ code in view of the Assembly Line project with Visula Studio as the IDE"
             />
           </div>
           <div class="project-details">
-            <p class="g1">C++ Application</p>
-            <p class="g2">Assembly Line Sim (Academic Project)</p>
+            <div class="project-category-title">
+              <p>
+                <span><strong>C++ Application</strong></span>
+              </p>
+              <p>Assembly Line Sim (Academic Project)</p>
+            </div>
+
             <div class="project-text-container">
               <p>
                 A program simulating an assembly line for customer order
@@ -284,8 +287,13 @@
           </div>
 
           <div class="project-details">
-            <p class="g1">C++ Application</p>
-            <p class="g2">CPU Subsystem Sim (Academic Project)</p>
+            <div class="project-category-title">
+              <p>
+                <span><strong>C++ Application</strong></span>
+              </p>
+              <p>CPU Subsystem Sim (Academic Project)</p>
+            </div>
+
             <div class="project-text-container">
               <p>
                 A program simulating a CPU like environment for job processing.
@@ -306,13 +314,13 @@
           <div class="project-img-container">
             <img
               src="./img/cpu-sim.PNG"
-              alt="code in view of the CPU like project with Visula Studio as the IDE"
+              alt="C++ code in view of the CPU like project with Visula Studio as the IDE"
             />
           </div>
         </div>
       </section>
 
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="contact">
           <h2 class="container secondary-heading">Get in Touch</h2>
           <p class="container">
@@ -322,7 +330,7 @@
             <span>vision</span>, I invite you to reach out so we can collaborate
             and create something <span>exceptional</span> together.
           </p>
-          <div class="constact-icons container">
+          <div class="contact-icons container">
             <a href=""
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
                 <g>
@@ -331,7 +339,9 @@
                   />
                 </g></svg
             ></a>
-            <a href=""
+            <a
+              href="https://www.linkedin.com/in/carlovictorino/"
+              target="_blank"
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                 <path
                   d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
@@ -351,7 +361,7 @@
 
     <footer>
       <div class="container">
-        <p>Designed and programmed by Carlo Victorino</p>
+        <p><span>Designed and programmed by Carlo Victorino</span></p>
       </div>
     </footer>
   </body>
