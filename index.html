@@ -11,11 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Carlo Victorino</title>
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="header-text-logo">
+      <a href="/" class="header-text-logo">
         <span class="color-accent">{</span>
         <span>C</span>
         <span>V</span>
@@ -23,26 +24,27 @@
       </a>
 
       <nav class="navigation">
-        <a href="#">Resume</a>
         <ul class="nav-link-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="resume btn-nav" href="#">Resume</a></li>
+          <li><a href="#home" class="btn-nav">Home</a></li>
+          <li><a href="#about" class="btn-nav">About</a></li>
+          <li><a href="#project" class="btn-nav">Project</a></li>
+          <li><a href="#contact" class="btn-landing">Contact</a></li>
         </ul>
-
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </nav>
+
+      <a class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
     </header>
 
     <main>
       <section class="section-hero" id="home">
         <div class="grid grid-col-2 hero container">
           <div class="hero-text">
-            <p>SOFT-WARE DEVELOPER</p>
+            <p class="role">SOFT-WARE DEVELOPER</p>
             <h1 class="primary-heading">
               Hi, I’m <br />
               <span class="color-accent">Carlo Victorino</span>
@@ -71,10 +73,18 @@
           <div class="about grid grid-col-2">
             <div class="about-img-box">
               <div class="image-container">
-                <img
-                  src="./img/carlo-victorino.png"
-                  alt="Carlo Victorino in front of a computer programming a website"
-                />
+                <picture>
+                  <source
+                    srcset="./img/carlo-victorino.webp"
+                    type="image/webp"
+                  />
+                  <source srcset="./img/carlo-victorino.png" type="image/png" />
+
+                  <img
+                    src="./img/carlo-victorino.png"
+                    alt="Carlo Victorino in front of a computer programming a website"
+                  />
+                </picture>
               </div>
             </div>
 
@@ -268,11 +278,11 @@
       <section class="section-project" id="project">
         <div class="container">
           <h2 class="secondary-heading">Things I've Built</h2>
-          <div class="grid grid-col-2">
+          <div class="grid grid-col-2 project">
             <img
               class="project-img"
               src="./img/assemlby-line.PNG"
-              alt="C++ code in view of the Assembly Line project with Visula Studio as the IDE"
+              alt="C++ code in view of the Assembly Line project with Visual Studio as the IDE"
             />
             <div class="project-details">
               <span class="project-category"
@@ -325,7 +335,7 @@
             <img
               class="project-img"
               src="./img/cpu-sim.PNG"
-              alt="C++ code in view of the CPU like project with Visula Studio as the IDE"
+              alt="C++ code in view of the CPU like project with Visual Studio as the IDE"
             />
           </div>
         </div>
@@ -381,5 +391,8 @@
         <p><span>Designed and programmed by Carlo Victorino</span></p>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
