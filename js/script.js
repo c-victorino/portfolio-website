@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries) => {
   );
 });
 
-// "section-anim" only used in all section elements
+// "section-anim" only used in all section elements for transitions
 const sectionsAnim = document.querySelectorAll(".section-anim");
 sectionsAnim.forEach((section) => observer.observe(section));
 
@@ -32,7 +32,8 @@ window.addEventListener("scroll", () => {
     header.classList.remove("hidden");
     header.classList.add("show");
 
-    // Top of page
+    // Top of page, will remover background thats used when header is shown
+    // anywhere that is not the very top of the page
     if (currentYaxis === 0) {
       header.classList.remove("background-color");
     }
@@ -40,20 +41,20 @@ window.addEventListener("scroll", () => {
   lastScrollPos = currentYaxis;
 });
 
-// use as toggle or remove as the action
+// use "toggle" or "remove" as the action for parameter
 function toggleNavigation(action) {
   menu.classList[action]("active"); // open or close navigation list
   document.documentElement.classList[action]("nav-open"); // enable or disable Y-axis
   overlay.classList[action]("active"); // overlay for blur
 }
 
-// Hamburger open or close
+// Hamburger open or close transition
 hamburger.addEventListener("click", function () {
   this.classList.toggle("active");
   toggleNavigation("toggle");
 });
 
-// closes navigation wen links are clicked and puts back default hamburger
+// closes navigation when links are clicked and puts back default hamburger
 menu.querySelectorAll(".nav-link-list a").forEach((link) =>
   link.addEventListener("click", () => {
     hamburger.classList.remove("active");
@@ -61,7 +62,7 @@ menu.querySelectorAll(".nav-link-list a").forEach((link) =>
   })
 );
 
-// removes mobile navigation and it related classes if left open during-
+// removes mobile navigation and it's related classes if left open during-
 // resizing of width greater than 768px
 window.addEventListener("resize", () => {
   const windowWidth = window.innerWidth;

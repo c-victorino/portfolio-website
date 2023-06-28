@@ -113,8 +113,8 @@
     width: 80%;
   }
 
-  .project-img:last-child {
-    grid-row: 3;
+  .project-details:nth-child(3) {
+    grid-row: 4;
   }
 }
 
