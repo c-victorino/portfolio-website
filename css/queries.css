@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion) {
+  .section-anim {
+    transition: none;
+  }
+}
+
 /* 1080px */
 @media (max-width: 67.5rem) {
   .container {

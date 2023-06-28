@@ -23,7 +23,6 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* overflow-x: initial; */
 }
 
 body {
@@ -32,7 +31,6 @@ body {
   font-weight: 400;
   color: var(--color-text);
   background-color: var(--color-primary);
-  /* overflow-x: hidden; */
 }
 
 p span {
@@ -168,6 +166,20 @@ strong {
 .background-color {
   background-color: #143f60;
   opacity: 0.9;
+}
+
+/* Section Animation */
+.section-anim {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(15px);
+  transition: all 0.75s;
+}
+
+.section-anim.show {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0px);
 }
 
 /* Header */

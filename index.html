@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,10 +13,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
     <title>Carlo Victorino</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header section-anim">
       <a href="/" class="header-text-logo">
         <span class="color-accent">{</span>
         <span>C</span>
@@ -41,7 +43,7 @@
     </header>
 
     <main>
-      <section class="section-hero" id="home">
+      <section class="section-hero section-anim" id="home">
         <div class="grid grid-col-2 hero container">
           <div class="hero-text">
             <p class="role">SOFT-WARE DEVELOPER</p>
@@ -66,7 +68,7 @@
         </div>
       </section>
 
-      <section class="section-about" id="about">
+      <section class="section-about section-anim" id="about">
         <div class="container">
           <h2 class="secondary-heading">Who am I?</h2>
 
@@ -82,7 +84,7 @@
 
                   <img
                     src="./img/carlo-victorino.png"
-                    alt="Carlo Victorino in front of a computer programming a website"
+                    alt="a picture of Carlo Victorino"
                   />
                 </picture>
               </div>
@@ -117,7 +119,7 @@
         </div>
       </section>
 
-      <section class="section-skills-education">
+      <section class="section-skills-education section-anim">
         <div class="container">
           <h3 class="tertiary-heading text-center">Skills</h3>
 
@@ -275,7 +277,7 @@
         </div>
       </section>
 
-      <section class="section-project" id="project">
+      <section class="section-project section-anim" id="project">
         <div class="container">
           <h2 class="secondary-heading">Things I've Built</h2>
           <div class="grid grid-col-2 project">
@@ -352,7 +354,12 @@
             and create something <span>exceptional</span> together.
           </p>
           <div class="contact-icons">
-            <a class="btn-standard" href="" title="Gmail"
+            <a
+              class="btn-standard"
+              href="mailto:jcd.victorino@gmail.com"
+              title="Gmail "
+              rel="noopener noreferrer"
+              target="_blank"
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
                 <g>
                   <path
@@ -393,6 +400,5 @@
     </footer>
 
     <div class="overlay"></div>
-    <script src="./js/script.js"></script>
   </body>
 </html>

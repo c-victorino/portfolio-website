@@ -3,6 +3,22 @@ const header = document.querySelector(".header");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".nav-link-list");
 const overlay = document.querySelector(".overlay");
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(
+    // if intersecting, add "show" for transition / animation
+    (entry) => entry.isIntersecting && entry.target.classList.add("show")
+  );
+});
+
+// "section-anim" only used in all section elements
+const sectionsAnim = document.querySelectorAll(".section-anim");
+sectionsAnim.forEach((section) => observer.observe(section));
+
 window.addEventListener("scroll", () => {
   const currentYaxis = window.pageYOffset || document.documentElement.scrollTop;
 
