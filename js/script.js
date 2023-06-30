@@ -1,4 +1,3 @@
-let lastScrollPos = 0;
 const header = document.querySelector(".header");
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".nav-link-list");
@@ -19,26 +18,17 @@ const observer = new IntersectionObserver((entries) => {
 const sectionsAnim = document.querySelectorAll(".section-anim");
 sectionsAnim.forEach((section) => observer.observe(section));
 
+let prevScrollPos = window.pageYOffset;
 window.addEventListener("scroll", () => {
-  const currentYaxis = window.pageYOffset || document.documentElement.scrollTop;
+  const currentScrollPos =
+    window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentYaxis > lastScrollPos) {
-    // Scroll down will show header
-    header.classList.add("hidden");
-    header.classList.remove("show");
-    header.classList.add("background-color");
-  } else {
-    // Scroll up will hide header
-    header.classList.remove("hidden");
-    header.classList.add("show");
-
-    // Top of page, will remover background thats used when header is shown
-    // anywhere that is not the very top of the page
-    if (currentYaxis === 0) {
-      header.classList.remove("background-color");
-    }
+  // insures when navigation list is open the header do not vanish
+  if (!menu.classList.contains("active")) {
+    header.style.transform =
+      prevScrollPos > currentScrollPos ? "translateY(0)" : "translateY(-100%)";
   }
-  lastScrollPos = currentYaxis;
+  prevScrollPos = currentScrollPos;
 });
 
 // use "toggle" or "remove" as the action for parameter
